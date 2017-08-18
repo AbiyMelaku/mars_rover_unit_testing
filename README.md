@@ -8,17 +8,18 @@ A rover's position and location is represented by a combination of x and y coord
 The first 2 inputs is the upper-right coordinates of the plateau, the lower-left coordinates are assumed to be 0,0. The rest of the input is information pertaining to the rovers that have been deployed. Each rover has 4 inputs. The first 3 give the rover's position, and the fourth is a series of instructions telling the rover how to explore the plateau. The position is made up of two integers and a letter separated by spaces, corresponding to the x and y coordinates and the rover's orientation. Each rover will be finished sequentially, which means that the second rover won't start to move until the first one has finished moving.
 
 ## OUTPUT ##
-The output for each rover should be its final coordinates and heading.
+The output for each robot will be logged to the console on a new line
 
 ## INPUT AND OUTPUT ##
 Test Input: 5 5 1 2 N LMLMLMLMM 3 3 E MMRMMRMRRM
 
 Expected Output:
 
+(console)</br>
 1 3 N</br>
 5 1 E
 
-## Use ##
+## USE ##
 Run from command line using the following format: 
 
 $ node robot.js X0 Y0 X1 Y1 dir1 instructions1 X2 Y2 dir2 instructions2
@@ -41,7 +42,7 @@ Run test from command line as follows:
 
 $ mocha robot-spec.js
 
-## Requirements ##
+## REQUIREMENTS ##
 
 * node.js (written using v4.5.0)
 * mocha (for testing - npm install mocha -g)
